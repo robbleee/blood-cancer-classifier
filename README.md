@@ -1,6 +1,6 @@
 # Haematix Landing Page
 
-A simple and friendly Streamlit landing page that redirects visitors to the new Blood Cancer Classifier platform.
+A simple and friendly Streamlit landing page that redirects visitors to the new Haemio platform.
 
 ## Features
 
@@ -36,4 +36,4 @@ The page uses a clean white background with teal accents (#008B8B, #20B2AA) to c
 
 ## New Platform
 
-The page redirects to: https://blood-cancer-classifier.streamlit.app
+The page redirects to: https://haemio.streamlit.app/

@@ -89,14 +89,10 @@ if 'countdown' not in st.session_state:
 col1, col2, col3 = st.columns([1, 2, 1])
 
 with col2:
-    # Manual redirect button
-    if st.button("🚀 Take me to the new platform", type="primary", use_container_width=True):
-        st.markdown("""
-        <script>
-        window.open('https://blood-cancer-classifier.streamlit.app', '_blank');
-        </script>
-        """, unsafe_allow_html=True)
-        st.success("Opening the new platform in a new tab...")
+    # Manual redirect button using link_button
+    st.link_button("🚀 Take me to the new platform", 
+                   "https://haemio.streamlit.app/", 
+                   use_container_width=True)
 
 # Auto-redirect countdown
 st.markdown('<p class="redirect-info">Or wait for automatic redirect...</p>', unsafe_allow_html=True)
@@ -104,7 +100,7 @@ st.markdown('<p class="redirect-info">Or wait for automatic redirect...</p>', un
 # Countdown display
 countdown_placeholder = st.empty()
 
-# Auto-redirect logic
+# Auto-redirect logic with improved JavaScript
 if st.session_state.countdown > 0:
     countdown_placeholder.markdown(f'<p class="countdown">Redirecting in {st.session_state.countdown} seconds</p>', unsafe_allow_html=True)
     time.sleep(1)
@@ -112,9 +108,13 @@ if st.session_state.countdown > 0:
     st.rerun()
 else:
     countdown_placeholder.markdown('<p class="countdown">Redirecting now...</p>', unsafe_allow_html=True)
+    # Use meta refresh as fallback and improved JavaScript
     st.markdown("""
+    <meta http-equiv="refresh" content="0; url=https://haemio.streamlit.app/">
     <script>
-    window.location.href = 'https://blood-cancer-classifier.streamlit.app';
+    setTimeout(function() {
+        window.location.replace('https://haemio.streamlit.app/');
+    }, 100);
     </script>
     """, unsafe_allow_html=True)
 
