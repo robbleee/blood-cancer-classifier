@@ -78,10 +78,6 @@ st.markdown('<p class="subtitle">We\'ve moved to a new home!</p>', unsafe_allow_
 st.markdown("""
 <div class="message">
     <p>Thank you for visiting Haematix! We're excited to announce that we've moved to our new platform with enhanced features and improved user experience.</p>
-    
-    <p>You'll find all our services and more at our new location:</p>
-    
-    <p><strong>🌐 blood-cancer-classifier.streamlit.app</strong></p>
 </div>
 """, unsafe_allow_html=True)
 
