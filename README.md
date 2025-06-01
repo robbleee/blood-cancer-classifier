@@ -1,11 +1,11 @@
 # Haematix Landing Page
 
-A simple and friendly Streamlit landing page that redirects visitors to the new Haemio.io website.
+A simple and friendly Streamlit landing page that redirects visitors to the new Blood Cancer Classifier platform.
 
 ## Features
 
 - Clean white and teal theme
-- Friendly messaging about the move to Haemio.io
+- Friendly messaging about the move to the new platform
 - Manual redirect button
 - Automatic redirect with countdown timer
 - Responsive design
@@ -30,6 +30,10 @@ The page uses a clean white background with teal accents (#008B8B, #20B2AA) to c
 
 ## Redirect Behavior
 
-- Users can manually click the button to open Haemio.io in a new tab
+- Users can manually click the button to open the new platform in a new tab
 - Automatic redirect occurs after 10 seconds
-- Clear messaging explains the move to the new platform # blood-cancer-classifier
+- Clear messaging explains the move to the new platform
+
+## New Platform
+
+The page redirects to: https://blood-cancer-classifier.streamlit.app

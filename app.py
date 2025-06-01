@@ -3,7 +3,7 @@ import time
 
 # Page configuration
 st.set_page_config(
-    page_title="Haematix - Moving to Haemio",
+    page_title="Haematix - Moving to New Platform",
     page_icon="🩸",
     layout="centered",
     initial_sidebar_state="collapsed"
@@ -81,7 +81,7 @@ st.markdown("""
     
     <p>You'll find all our services and more at our new location:</p>
     
-    <p><strong>🌐 www.haemio.io</strong></p>
+    <p><strong>🌐 blood-cancer-classifier.streamlit.app</strong></p>
 </div>
 """, unsafe_allow_html=True)
 
@@ -94,13 +94,13 @@ col1, col2, col3 = st.columns([1, 2, 1])
 
 with col2:
     # Manual redirect button
-    if st.button("🚀 Take me to Haemio.io", type="primary", use_container_width=True):
+    if st.button("🚀 Take me to the new platform", type="primary", use_container_width=True):
         st.markdown("""
         <script>
-        window.open('https://www.haemio.io', '_blank');
+        window.open('https://blood-cancer-classifier.streamlit.app', '_blank');
         </script>
         """, unsafe_allow_html=True)
-        st.success("Opening Haemio.io in a new tab...")
+        st.success("Opening the new platform in a new tab...")
 
 # Auto-redirect countdown
 st.markdown('<p class="redirect-info">Or wait for automatic redirect...</p>', unsafe_allow_html=True)
@@ -118,7 +118,7 @@ else:
     countdown_placeholder.markdown('<p class="countdown">Redirecting now...</p>', unsafe_allow_html=True)
     st.markdown("""
     <script>
-    window.location.href = 'https://www.haemio.io';
+    window.location.href = 'https://blood-cancer-classifier.streamlit.app';
     </script>
     """, unsafe_allow_html=True)
 
