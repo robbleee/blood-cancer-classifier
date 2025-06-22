@@ -91,7 +91,7 @@ col1, col2, col3 = st.columns([1, 2, 1])
 with col2:
     # Manual redirect button using link_button
     st.link_button("🚀 Take me to the new platform", 
-                   "https://www.haem.io/", 
+                   "https://haemio-f45849c74fc4.herokuapp.com/", 
                    use_container_width=True)
 
 # Auto-redirect countdown
